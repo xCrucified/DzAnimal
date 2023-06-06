@@ -10,16 +10,9 @@ public:
     Hamster(const string& animalName, size_t animalAge, const string& hamsterPattern)
         : Animal(animalName, animalAge), pattern(hamsterPattern) {}
 
-    void sound() const override {
-        cout << "Squeak" << endl;
-    }
+    void sound() const override;
 
-    void type() const override {
-        cout << "Hamster" << endl;
-    }
+    void type() const override;
 
-    void show() const override {
-        Animal::show();
-        cout << "Pattern: " << pattern << endl;
-    }
+    void show() const override;
 };

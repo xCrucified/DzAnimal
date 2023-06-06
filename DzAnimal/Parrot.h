@@ -10,16 +10,9 @@ public:
     Parrot(const string& animalName, size_t animalAge, const string& parrotSpecies)
         : Animal(animalName, animalAge), species(parrotSpecies) {}
 
-    void sound() const override {
-        cout << "Squawk" << endl;
-    }
+    void sound() const override;
 
-    void type() const override {
-        cout << "Parrot" << endl;
-    }
+    void type() const override;
 
-    void show() const override {
-        Animal::show();
-        cout << "Species: " << species << endl;
-    }
+    void show() const override;
 };

@@ -10,16 +10,9 @@ public:
     Dog(const string& animalName, size_t animalAge, const string& dogBreed)
         : Animal(animalName, animalAge), breed(dogBreed) {}
 
-    void sound() const override {
-        cout << "Woof" << endl;
-    }
+    void sound() const override;
 
-    void type() const override {
-        cout << "Dog" << endl;
-    }
+    void type() const override;
 
-    void show() const override {
-        Animal::show();
-        cout << "Breed: " << breed << endl;
-    }
+    void show() const override;
 };

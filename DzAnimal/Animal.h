@@ -15,27 +15,13 @@ public:
 
     virtual void type() const = 0;
 
-    virtual void show() const {
-        cout << "Name: " << name << endl;
-        cout << "Age: " << age << endl;
-        sound();
-        type();
-        cout << endl;
-    }
+    virtual void show() const;
 
-    const string& getName() const {
-        return name;
-    }
+    const string& getName() const;
 
-    void setName(const string& animalName) {
-        name = animalName;
-    }
+    void setName(const string& animalName);
 
-    size_t getAge() const {
-        return age;
-    }
+    size_t getAge() const;
 
-    void setAge(size_t animalAge) {
-        age = animalAge;
-    }
+    void setAge(size_t animalAge);
 };
